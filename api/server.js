@@ -1,10 +1,10 @@
-const express = require('express');
-const CompanyModel = require('../companies/model');
+const express = require("express");
+const CompanyModel = require("../companies/model.js");
 const server = express();
-
 server.use(express.json());
 
-server.get('/', (res) => {
+
+server.get('/', (req, res) => {
     CompanyModel.getAll()
     .then(companies => {
         res.status(200).json(companies)

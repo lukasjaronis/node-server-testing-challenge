@@ -1,4 +1,4 @@
-const db = require('../data/db-Config');
+const db = require('../data/db-Config.js');
 
 module.exports = {
     insert,
@@ -8,7 +8,7 @@ module.exports = {
 
 function insert({ companyName, founder}) {
     return db('companies')
-    .insert({ companyName, founder })
+    .insert({ companyName, founder, })
 }
 
 function getAll() {

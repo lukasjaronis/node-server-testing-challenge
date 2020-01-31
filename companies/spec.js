@@ -1,5 +1,5 @@
-const db = require('../data/db-Config');
 const CompanyModel = require('./model');
+const db = require('../data/db-Config');
 
 describe('company model', () => {
     describe('insert()', () => {
